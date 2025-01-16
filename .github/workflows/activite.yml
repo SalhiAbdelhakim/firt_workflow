@@ -12,7 +12,7 @@ jobs:
    runs-on : macos-latest
    steps:
     - name : print-2
-      run : "Bien, merci."
+      run : echo "Bien, merci."
    
   
      
