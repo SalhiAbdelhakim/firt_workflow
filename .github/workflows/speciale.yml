@@ -1,0 +1,11 @@
+name: I-speciale
+on:
+  push:
+    branches:
+      - "Speciles"
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "hello les speciales"
