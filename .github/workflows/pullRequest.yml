@@ -1,0 +1,8 @@
+name: plR
+on: pull-request
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "hello pl"
