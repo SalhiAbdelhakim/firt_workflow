@@ -1,4 +1,4 @@
-name: plR
+name: pull_Rq
 on:
   pull-request:
     types: [closed]
