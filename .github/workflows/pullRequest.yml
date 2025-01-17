@@ -1,8 +1,10 @@
 name: plR
-on: pull-request
+on:
+  pull-request:
+    types: [closed]
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: echo "hello pl"
+        run: echo "fermeture de pl"
