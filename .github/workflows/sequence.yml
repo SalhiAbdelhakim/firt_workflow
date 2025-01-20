@@ -1,7 +1,8 @@
 name: sequence
 on:
   push:
-    branches: -sequence
+    branches:
+      - sequence
 
 jobs:
   BUILD:
