@@ -1,0 +1,19 @@
+name: Actions_T
+on: push
+jobs:
+  job-0:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lister
+        run: ls -a
+      - name: rn_hello
+        run: bash hello.sh
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: lister
+        run: ls -a
+      - name: rn_hello
+        run: bash hello.sh
