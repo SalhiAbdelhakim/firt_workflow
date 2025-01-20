@@ -1,0 +1,10 @@
+name: pull_Rq
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "fermeture de pl"

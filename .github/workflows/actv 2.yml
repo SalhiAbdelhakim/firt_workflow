@@ -1,0 +1,18 @@
+name: actv_2
+on:
+  push:
+    branches:
+      - "lang"
+jobs:
+  fr_user:
+    if: vars.Valeur == 'FR'
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "L'utilisateur ${{github.actor}}parle français"
+  eng_user:
+    if: vars.Valeur != 'FR'
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "User ${{github.actor}}speaks english"
