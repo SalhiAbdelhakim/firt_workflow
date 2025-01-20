@@ -15,5 +15,5 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: lister
         run: ls -a
-      - name: rn_hello
+      - name: run
         run: bash hello.sh
